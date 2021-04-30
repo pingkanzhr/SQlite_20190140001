@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.sqlitea.database.DBController;
@@ -25,9 +24,9 @@ public class TemanBaru extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teman_baru);
 
-        tNama = (TextInputEditText)findViewById(R.id.tietNama);
-        tTelpon = (TextInputEditText)findViewById(R.id.tietTelpon);
-        simpanBtn = (Button)findViewById(R.id.buttonSave);
+        tNama = (TextInputEditText)findViewById(R.id.editNama);
+        tTelpon = (TextInputEditText)findViewById(R.id.editTelpon);
+        simpanBtn = (Button)findViewById(R.id.buttonEdit);
 
         simpanBtn.setOnClickListener(new View.OnClickListener() {
 

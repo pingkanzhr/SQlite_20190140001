@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SQliteA</string>
+    <string name="delete">Delete Data</string>
+    <string name="edit">Edit Data</string>
+    <string name="jkel">Jenis Kelamin</string>
+    <string name="layoutedit">Edit Data Mahasiswa</string>
+    <string name="nama">Nama Mahasiswa</string>
+    <string name="nim">NIM Mahasiswa</string>
+    <string name="btnsimpan">SAVE</string>
 </resources>
