@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SQliteA">
+        <activity android:name=".LihatData" android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".EditTeman" android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".TemanBaru" android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".MainActivity">

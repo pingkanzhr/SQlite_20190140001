@@ -15,6 +15,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sqlitea.EditTeman;
+import com.example.sqlitea.LihatData;
 import com.example.sqlitea.MainActivity;
 import com.example.sqlitea.R;
 import com.example.sqlitea.database.DBController;
@@ -51,6 +52,17 @@ public class TemanAdapter extends RecyclerView.Adapter<TemanAdapter.TemanViewHol
         holder.namaTxt.setTextSize(20);
         holder.namaTxt.setText(nama);
         holder.telponTxt.setText(telpon);
+
+    holder.cardku.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent i= new Intent(context, LihatData.class);
+            i.putExtra("id", id);
+            i.putExtra("nama", nama);
+            i.putExtra("telpon", telpon);
+            context.startActivity(i);
+        }
+    });
 
     holder.cardku.setOnLongClickListener(new View.OnLongClickListener() {
 
